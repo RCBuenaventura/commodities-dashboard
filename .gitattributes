@@ -1,0 +1,14 @@
+# Normalise line endings to LF in the repository.
+# Developed on Windows, built on Linux in GitHub Actions — without this,
+# every file round-trips between CRLF and LF and pollutes the diffs.
+* text=auto eol=lf
+
+# Generated data: keep diffs readable in the daily bot commits.
+data/*.json text eol=lf
+
+# Binary assets must never be normalised.
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.webp binary
+*.woff2 binary
