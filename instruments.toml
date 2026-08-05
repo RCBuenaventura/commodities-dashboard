@@ -1,0 +1,227 @@
+# The only file you edit to add a commodity, as long as an existing source can serve
+# it. dashboard.config validates this strictly: unknown keys, missing keys, duplicate
+# ids and unknown groups all fail the run rather than quietly dropping a tile.
+#
+# Keys per [[instrument]]:
+#   id         stable slug; also the data/<id>.json filename. Never reuse one.
+#   name       display name
+#   group      must match a [[group]] id below
+#   source     module id under src/dashboard/sources/
+#   symbol     whatever that source needs to identify the instrument
+#   unit       display unit, e.g. "USD/bbl"
+#   currency   optional; ISO code the value is quoted in, for the sterling toggle
+#   precision  optional; decimal places, default 2
+#   proxy      optional; set when this stands in for a contract with no free feed.
+#              The renderer always shows it. Do not remove one to tidy a tile.
+#   news       optional; search term for the per-instrument feed
+
+# Group order here is display order on the page.
+
+[[group]]
+id   = "crude"
+name = "Crude & refined"
+
+[[group]]
+id   = "gas"
+name = "Gas & LNG"
+
+[[group]]
+id   = "lpg"
+name = "LPG"
+
+[[group]]
+id   = "power"
+name = "UK electricity"
+
+[[group]]
+id   = "metals"
+name = "Metals"
+
+[[group]]
+id   = "fx"
+name = "FX"
+
+# ---- Crude & refined ----
+
+[[instrument]]
+id       = "brent"
+name     = "Brent crude"
+group    = "crude"
+source   = "yahoo"
+symbol   = "BZ=F"
+unit     = "USD/bbl"
+currency = "USD"
+news     = "Brent crude oil price"
+
+[[instrument]]
+id       = "wti"
+name     = "WTI crude"
+group    = "crude"
+source   = "yahoo"
+symbol   = "CL=F"
+unit     = "USD/bbl"
+currency = "USD"
+news     = "WTI crude oil price"
+
+[[instrument]]
+id        = "heating_oil"
+name      = "Heating oil (ULSD)"
+group     = "crude"
+source    = "yahoo"
+symbol    = "HO=F"
+unit      = "USD/gal"
+currency  = "USD"
+precision = 4
+
+# ---- Gas & LNG ----
+
+[[instrument]]
+id       = "ttf"
+name     = "TTF (Dutch)"
+group    = "gas"
+source   = "yahoo"
+symbol   = "TTF=F"
+unit     = "EUR/MWh"
+currency = "EUR"
+news     = "TTF gas price Europe"
+
+[[instrument]]
+id        = "henry_hub"
+name      = "Henry Hub"
+group     = "gas"
+source    = "yahoo"
+symbol    = "NG=F"
+unit      = "USD/MMBtu"
+currency  = "USD"
+precision = 3
+news      = "Henry Hub natural gas price"
+
+[[instrument]]
+id       = "nbp"
+name     = "UK NBP"
+group    = "gas"
+source   = "yahoo"
+symbol   = "TTF=F"
+unit     = "EUR/MWh"
+currency = "EUR"
+proxy    = "NBP is licensed by ICE and has no free feed. This is TTF, which tracks it closely but is a different contract."
+news     = "UK NBP gas price"
+
+[[instrument]]
+id       = "jkm"
+name     = "JKM (Asian LNG spot)"
+group    = "gas"
+source   = "yahoo"
+symbol   = "TTF=F"
+unit     = "EUR/MWh"
+currency = "EUR"
+proxy    = "JKM is proprietary to Platts. This is TTF, the European benchmark, used as a proxy. Asian and European spot diverge."
+news     = "JKM Asian LNG spot price"
+
+# ---- LPG ----
+
+[[instrument]]
+id        = "propane"
+name      = "Mont Belvieu propane"
+group     = "lpg"
+source    = "eia"
+symbol    = "EER_EPLLPA_PF4_Y44MB_DPG"
+unit      = "USD/gal"
+currency  = "USD"
+precision = 4
+news      = "Mont Belvieu propane price"
+
+# ---- UK electricity ----
+
+[[instrument]]
+id       = "uk_wholesale"
+name     = "Wholesale (MID)"
+group    = "power"
+source   = "elexon"
+symbol   = "MID"
+unit     = "GBP/MWh"
+currency = "GBP"
+news     = "UK wholesale electricity price"
+
+[[instrument]]
+id       = "uk_agile"
+name     = "Octopus Agile (London)"
+group    = "power"
+source   = "octopus"
+symbol   = "AGILE-24-10-01/E-1R-AGILE-24-10-01-C"
+unit     = "p/kWh"
+currency = "GBP"
+
+[[instrument]]
+id        = "grid_carbon"
+name      = "Grid carbon intensity"
+group     = "power"
+source    = "carbon"
+symbol    = "national"
+unit      = "gCO2/kWh"
+precision = 0
+
+# ---- Metals ----
+
+[[instrument]]
+id       = "gold"
+name     = "Gold"
+group    = "metals"
+source   = "yahoo"
+symbol   = "GC=F"
+unit     = "USD/oz"
+currency = "USD"
+news     = "gold price"
+
+[[instrument]]
+id        = "silver"
+name      = "Silver"
+group     = "metals"
+source    = "yahoo"
+symbol    = "SI=F"
+unit      = "USD/oz"
+currency  = "USD"
+precision = 3
+
+[[instrument]]
+id        = "copper"
+name      = "Copper"
+group     = "metals"
+source    = "yahoo"
+symbol    = "HG=F"
+unit      = "USD/lb"
+currency  = "USD"
+precision = 4
+news      = "copper price"
+
+[[instrument]]
+id       = "aluminium"
+name     = "Aluminium"
+group    = "metals"
+source   = "yahoo"
+symbol   = "ALI=F"
+unit     = "USD/t"
+currency = "USD"
+proxy    = "COMEX aluminium (ALI), not the LME cash settlement, which is licensed. Levels differ."
+
+# ---- FX ----
+
+[[instrument]]
+id        = "gbpusd"
+name      = "GBP/USD"
+group     = "fx"
+source    = "fx"
+symbol    = "USD"
+unit      = "USD per GBP"
+currency  = "USD"
+precision = 4
+
+[[instrument]]
+id        = "gbpeur"
+name      = "GBP/EUR"
+group     = "fx"
+source    = "fx"
+symbol    = "EUR"
+unit      = "EUR per GBP"
+currency  = "EUR"
+precision = 4

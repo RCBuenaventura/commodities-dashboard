@@ -113,7 +113,7 @@ If the commodity needs a provider that isn't wired up yet, add a module under
 
 - [x] Repository and licence
 - [x] Project scaffold, tooling, `CLAUDE.md`
-- [ ] Domain models and the `Source` protocol
+- [x] Domain models and the `Source` protocol
 - [ ] Source modules (Yahoo, EIA, Elexon, Octopus, carbon, FX)
 - [ ] JSON store and fetch orchestrator
 - [ ] Static renderer and charts

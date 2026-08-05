@@ -64,10 +64,6 @@ select = [
   "RUF",
 ]
 
-[tool.ruff.lint.per-file-ignores]
-# Test functions do not need return annotations, and assert is the point.
-"tests/**" = ["ANN201", "S101"]
-
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "parents"
 
