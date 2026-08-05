@@ -64,6 +64,11 @@ select = [
   "RUF",
 ]
 
+[tool.ruff.lint.per-file-ignores]
+# The test helpers bridge untyped JSON fixtures and **kwargs factories into typed
+# code. `Any` is the accurate annotation there, not a missing one.
+"tests/conftest.py" = ["ANN401"]
+
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "parents"
 

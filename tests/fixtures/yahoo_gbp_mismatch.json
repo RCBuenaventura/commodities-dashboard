@@ -1,0 +1,29 @@
+{
+  "chart": {
+    "result": [
+      {
+        "meta": {
+          "currency": "GBp",
+          "symbol": "BZ=F",
+          "gmtoffset": 0,
+          "regularMarketPrice": 6431.0
+        },
+        "timestamp": [
+          1785850200,
+          1785936600
+        ],
+        "indicators": {
+          "quote": [
+            {
+              "close": [
+                6420.0,
+                6431.0
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  }
+}
