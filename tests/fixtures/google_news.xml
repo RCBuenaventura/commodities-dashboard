@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<generator>NFE/5.0</generator>
+<title>"Brent crude oil price" - Google News</title>
+<link>https://news.google.com/search?q=Brent+crude+oil+price</link>
+<language>en-GB</language>
+<item>
+  <title>Brent settles higher as OPEC+ holds output steady</title>
+  <link>https://news.google.com/rss/articles/CBMiexample1</link>
+  <guid isPermaLink="false">CBMiexample1</guid>
+  <pubDate>Tue, 04 Aug 2026 17:42:00 GMT</pubDate>
+  <description>&lt;a href="https://example.com/a"&gt;Brent settles higher&lt;/a&gt;</description>
+  <source url="https://www.reuters.com">Reuters</source>
+</item>
+<item>
+  <title>North Sea maintenance trims August loadings</title>
+  <link>https://news.google.com/rss/articles/CBMiexample2</link>
+  <guid isPermaLink="false">CBMiexample2</guid>
+  <pubDate>Tue, 04 Aug 2026 09:15:00 GMT</pubDate>
+  <source url="https://www.argusmedia.com">Argus Media</source>
+</item>
+<item>
+  <title>Diesel cracks widen on tight distillate stocks</title>
+  <link>https://news.google.com/rss/articles/CBMiexample3</link>
+  <guid isPermaLink="false">CBMiexample3</guid>
+  <pubDate>Mon, 03 Aug 2026 21:03:00 GMT</pubDate>
+  <source url="https://www.bloomberg.com">Bloomberg</source>
+</item>
+</channel>
+</rss>

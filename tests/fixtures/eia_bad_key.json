@@ -1,0 +1,4 @@
+{
+  "error": "invalid or missing api_key. For key registration, documentation, and examples see https://www.eia.gov/opendata/",
+  "code": 403
+}

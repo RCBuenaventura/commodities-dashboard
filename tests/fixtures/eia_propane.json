@@ -1,0 +1,49 @@
+{
+  "response": {
+    "total": "9612",
+    "dateFormat": "YYYY-MM-DD",
+    "frequency": "daily",
+    "description": "Propane spot prices, free on board",
+    "data": [
+      {
+        "period": "2026-08-07",
+        "duoarea": "Y44MB",
+        "area-name": "MONT BELVIEU, TX",
+        "product": "EPLLPA",
+        "product-name": "Propane",
+        "process": "PF4",
+        "process-name": "Spot Price FOB",
+        "series": "EER_EPLLPA_PF4_Y44MB_DPG",
+        "series-description": "Mont Belvieu, TX Propane Spot Price FOB",
+        "value": 0.8134,
+        "units": "$/GAL"
+      },
+      {
+        "period": "2026-08-06",
+        "duoarea": "Y44MB",
+        "series": "EER_EPLLPA_PF4_Y44MB_DPG",
+        "value": null,
+        "units": "$/GAL"
+      },
+      {
+        "period": "2026-08-05",
+        "duoarea": "Y44MB",
+        "series": "EER_EPLLPA_PF4_Y44MB_DPG",
+        "value": "0.8021",
+        "units": "$/GAL"
+      },
+      {
+        "period": "2026-08-04",
+        "duoarea": "Y44MB",
+        "series": "EER_EPLLPA_PF4_Y44MB_DPG",
+        "value": 0.7998,
+        "units": "$/GAL"
+      }
+    ]
+  },
+  "request": {
+    "command": "/v2/petroleum/pri/spt/data/",
+    "params": {}
+  },
+  "apiVersion": "2.1.8"
+}

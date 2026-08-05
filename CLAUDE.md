@@ -16,9 +16,12 @@ backend service, or a runtime API.
 
 ## Current state
 
-The repository is early. As of the last update it contains only `README.md`, `LICENSE`,
-`.gitignore`, `.gitattributes` and this file. **The `src/` tree described below does not
-exist yet.** Read before you assume: check what is actually on disk rather than trusting
+The repository is early. The scaffold has landed: `pyproject.toml` (hatchling, ruff, mypy,
+pytest), `src/dashboard/` as an installable package, a smoke-test suite, and
+`.github/workflows/ci.yml`. **None of the modules in the layout below exist yet** —
+`models.py`, `config.py`, `sources/`, `store.py`, `fetch.py` and `render.py` are all still
+to be written, as are `templates/`, `static/`, `data/`, `instruments.toml` and
+`update.yml`. Read before you assume: check what is actually on disk rather than trusting
 the layout section as a description of the present.
 
 The `Roadmap` section of `README.md` tracks what has landed. Update its checkboxes in the
