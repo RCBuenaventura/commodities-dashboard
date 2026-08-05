@@ -1,0 +1,302 @@
+/*
+  Dashboard styling.
+
+  Designed phone-first: the common case is this pinned to an iPhone home screen and
+  glanced at, so tiles are a single column on narrow screens and the type is large
+  enough to read without zooming. Safe-area padding keeps content clear of the notch
+  and the home indicator when running standalone.
+
+  Dark by default, light when the device asks for it.
+*/
+
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface-2: #1c2230;
+  --line: #2a3038;
+  --text: #e6edf3;
+  --muted: #9198a1;
+  --up: #3fb950;
+  --down: #f85149;
+  --flat: #8b949e;
+  --accent: #d29922;
+  --warn-bg: #2d2213;
+  --warn-line: #6b4d16;
+  --radius: 12px;
+  --gap: 0.75rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --surface-2: #f0f3f6;
+    --line: #d8dee4;
+    --text: #1f2328;
+    --muted: #59636e;
+    --up: #1a7f37;
+    --down: #cf222e;
+    --flat: #6e7781;
+    --accent: #9a6700;
+    --warn-bg: #fff8e5;
+    --warn-line: #e6c26a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  /* Belt and braces: nothing on a dashboard is worth a sideways scroll. */
+  overflow-x: hidden;
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  /* Standalone on iOS paints under the status bar and home indicator. */
+  padding:
+    env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.masthead {
+  padding: 1.25rem 1rem 0.5rem;
+}
+
+.masthead h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.generated {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+main { padding: 0 1rem 1rem; }
+
+.group { margin-top: 1.5rem; }
+
+.group h2 {
+  margin: 0 0 0.6rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.tiles {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 34rem) {
+  .tiles { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 52rem) {
+  .tiles { grid-template-columns: repeat(3, 1fr); }
+  main { max-width: 72rem; margin: 0 auto; }
+  .masthead { max-width: 72rem; margin: 0 auto; }
+  footer { max-width: 72rem; margin: 0 auto; }
+}
+
+.tile {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.85rem 0.9rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  /* A grid item defaults to min-width:auto, so one long unbreakable string in a
+     headline widens the column past the viewport and takes the whole page with it.
+     Phones have no horizontal scrollbar to reveal what was lost. */
+  min-width: 0;
+}
+
+.tile--stale { border-style: dashed; }
+.tile--empty { opacity: 0.72; }
+
+.tile__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.tile__name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.tile__unit {
+  color: var(--muted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.tile__value {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 650;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.tile__value--none { color: var(--muted); }
+
+.tile__change {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  vertical-align: middle;
+  font-variant-numeric: tabular-nums;
+}
+
+.tile__change--up { color: var(--up); }
+.tile__change--down { color: var(--down); }
+.tile__change--flat { color: var(--flat); }
+
+.tile__sterling {
+  margin: -0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.tile__spark {
+  width: 100%;
+  height: 30px;
+  margin: 0.15rem 0;
+  color: var(--flat);
+  overflow: visible;
+}
+
+.tile__spark--up { color: var(--up); }
+.tile__spark--down { color: var(--down); }
+
+.tile__observed {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.badge--stale {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  color: var(--accent);
+}
+
+.badge--proxy {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+/* The proxy caveat is load-bearing honesty, not fine print to be hidden. It stays
+   visible at every width. */
+.tile__proxy {
+  margin: 0.2rem 0 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.tile__news {
+  margin: 0.35rem 0 0;
+  padding: 0.5rem 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tile__news li {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  min-width: 0;
+  /* Publisher slugs and unspaced headlines are the usual overflow culprits. */
+  overflow-wrap: anywhere;
+}
+
+.tile__news a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tile__news a:hover,
+.tile__news a:focus-visible { text-decoration: underline; }
+
+.tile__source {
+  display: block;
+  color: var(--muted);
+  font-size: 0.6875rem;
+}
+
+.problems {
+  margin: 0.75rem 1rem 0;
+  padding: 0.75rem 0.9rem;
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  border-radius: var(--radius);
+  font-size: 0.8125rem;
+}
+
+.problems h2 {
+  margin: 0 0 0.35rem;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.problems ul { margin: 0.25rem 0; padding-left: 1.1rem; }
+.problems p { margin: 0.35rem 0 0; color: var(--muted); }
+
+footer {
+  padding: 1.5rem 1rem 2rem;
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+footer p { margin: 0 0 0.5rem; }
+footer a { color: var(--muted); }
+
+.disclaimer strong { color: var(--text); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .tile { transition: border-color 0.15s ease; }
+}

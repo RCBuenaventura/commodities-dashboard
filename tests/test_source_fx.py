@@ -20,15 +20,15 @@ def test_one_response_covers_every_pair() -> None:
         [instrument(**USD), instrument(**EUR)],
     )
     assert {q.instrument: q.value for q in quotes} == {
-        "gbpusd": 1.2783,
-        "gbpeur": 1.1642,
+        "gbpusd": 1.3479,
+        "gbpeur": 1.1666,
     }
 
 
 def test_the_observed_date_is_the_ecb_fixing_date() -> None:
     """On a weekend the rate is Friday's, and it is dated Friday."""
     quotes = parse_rates(fixture_json("frankfurter_latest.json"), [instrument(**USD)])
-    assert quotes[0].observed == date(2026, 8, 4)
+    assert quotes[0].observed == date(2026, 8, 5)
 
 
 def test_a_missing_pair_is_skipped_not_invented() -> None:

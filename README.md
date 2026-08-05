@@ -109,17 +109,37 @@ If the commodity needs a provider that isn't wired up yet, add a module under
 
 ---
 
+## Putting it on a phone
+
+The site is a PWA, so it installs to an iOS home screen and opens like an app,
+offline included.
+
+**One-off setup, in the repository settings:**
+
+1. **Settings → Secrets and variables → Actions** — add `EIA_API_KEY`. Without it
+   every other source still updates and the propane tile stays empty, which the page
+   says out loud.
+2. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
+3. **Actions → update → Run workflow.** The daily schedule is 06:20 UTC; this first
+   manual run seeds `data/` and publishes the site.
+
+Then on the iPhone: open the published URL in **Safari** (Chrome on iOS cannot install
+web apps), tap **Share → Add to Home Screen**. It gets its own icon, launches without
+browser chrome, and shows the last rendered page when there is no signal.
+
+---
+
 ## Roadmap
 
 - [x] Repository and licence
 - [x] Project scaffold, tooling, `CLAUDE.md`
 - [x] Domain models and the `Source` protocol
 - [x] Source modules (Yahoo, EIA, Elexon, Octopus, carbon, FX)
-- [ ] JSON store and fetch orchestrator
-- [ ] Static renderer and charts
-- [ ] Daily GitHub Actions workflow and Pages deploy
-- [ ] Per-commodity news feeds
-- [ ] Installable on iOS home screen (PWA)
+- [x] JSON store and fetch orchestrator
+- [x] Static renderer and charts
+- [x] Daily GitHub Actions workflow and Pages deploy
+- [x] Per-commodity news feeds
+- [x] Installable on iOS home screen (PWA)
 
 ---
 

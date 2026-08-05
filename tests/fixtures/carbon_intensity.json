@@ -1,11 +1,29 @@
 {
   "data": [
     {
+      "from": "2026-08-03T23:00Z",
+      "to": "2026-08-03T23:30Z",
+      "intensity": {
+        "forecast": 146,
+        "actual": 158,
+        "index": "moderate"
+      }
+    },
+    {
+      "from": "2026-08-03T23:30Z",
+      "to": "2026-08-04T00:00Z",
+      "intensity": {
+        "forecast": 141,
+        "actual": 158,
+        "index": "moderate"
+      }
+    },
+    {
       "from": "2026-08-04T00:00Z",
       "to": "2026-08-04T00:30Z",
       "intensity": {
-        "forecast": 150,
-        "actual": 145,
+        "forecast": 158,
+        "actual": 167,
         "index": "moderate"
       }
     },
@@ -14,7 +32,7 @@
       "to": "2026-08-04T01:00Z",
       "intensity": {
         "forecast": 157,
-        "actual": 152,
+        "actual": 169,
         "index": "moderate"
       }
     },
@@ -22,17 +40,17 @@
       "from": "2026-08-04T01:00Z",
       "to": "2026-08-04T01:30Z",
       "intensity": {
-        "forecast": 164,
-        "actual": 159,
-        "index": "moderate"
+        "forecast": 155,
+        "actual": 170,
+        "index": "high"
       }
     },
     {
       "from": "2026-08-04T01:30Z",
       "to": "2026-08-04T02:00Z",
       "intensity": {
-        "forecast": 171,
-        "actual": 166,
+        "forecast": 153,
+        "actual": 167,
         "index": "moderate"
       }
     },
@@ -40,8 +58,8 @@
       "from": "2026-08-04T02:00Z",
       "to": "2026-08-04T02:30Z",
       "intensity": {
-        "forecast": 178,
-        "actual": 173,
+        "forecast": 162,
+        "actual": 165,
         "index": "moderate"
       }
     },
@@ -49,8 +67,8 @@
       "from": "2026-08-04T02:30Z",
       "to": "2026-08-04T03:00Z",
       "intensity": {
-        "forecast": 185,
-        "actual": 180,
+        "forecast": 159,
+        "actual": 169,
         "index": "moderate"
       }
     },
@@ -58,53 +76,53 @@
       "from": "2026-08-04T03:00Z",
       "to": "2026-08-04T03:30Z",
       "intensity": {
-        "forecast": 192,
-        "actual": 187,
-        "index": "moderate"
+        "forecast": 161,
+        "actual": 173,
+        "index": "high"
       }
     },
     {
       "from": "2026-08-04T03:30Z",
       "to": "2026-08-04T04:00Z",
       "intensity": {
-        "forecast": 199,
-        "actual": 194,
-        "index": "moderate"
+        "forecast": 153,
+        "actual": 175,
+        "index": "high"
       }
     },
     {
       "from": "2026-08-04T04:00Z",
       "to": "2026-08-04T04:30Z",
       "intensity": {
-        "forecast": 206,
-        "actual": 201,
-        "index": "moderate"
+        "forecast": 94,
+        "actual": 176,
+        "index": "high"
       }
     },
     {
       "from": "2026-08-04T04:30Z",
       "to": "2026-08-04T05:00Z",
       "intensity": {
-        "forecast": 213,
-        "actual": 208,
-        "index": "moderate"
+        "forecast": 83,
+        "actual": 171,
+        "index": "high"
       }
     },
     {
       "from": "2026-08-04T05:00Z",
       "to": "2026-08-04T05:30Z",
       "intensity": {
-        "forecast": 220,
-        "actual": 215,
-        "index": "moderate"
+        "forecast": 165,
+        "actual": 172,
+        "index": "high"
       }
     },
     {
       "from": "2026-08-04T05:30Z",
       "to": "2026-08-04T06:00Z",
       "intensity": {
-        "forecast": 227,
-        "actual": 222,
+        "forecast": 174,
+        "actual": 160,
         "index": "moderate"
       }
     },
@@ -112,8 +130,8 @@
       "from": "2026-08-04T06:00Z",
       "to": "2026-08-04T06:30Z",
       "intensity": {
-        "forecast": 234,
-        "actual": 229,
+        "forecast": 160,
+        "actual": 153,
         "index": "moderate"
       }
     },
@@ -121,8 +139,8 @@
       "from": "2026-08-04T06:30Z",
       "to": "2026-08-04T07:00Z",
       "intensity": {
-        "forecast": 241,
-        "actual": 236,
+        "forecast": 156,
+        "actual": 148,
         "index": "moderate"
       }
     },
@@ -130,8 +148,8 @@
       "from": "2026-08-04T07:00Z",
       "to": "2026-08-04T07:30Z",
       "intensity": {
-        "forecast": 248,
-        "actual": 243,
+        "forecast": 138,
+        "actual": 139,
         "index": "moderate"
       }
     },
@@ -139,44 +157,44 @@
       "from": "2026-08-04T07:30Z",
       "to": "2026-08-04T08:00Z",
       "intensity": {
-        "forecast": 255,
-        "actual": 250,
-        "index": "high"
+        "forecast": 127,
+        "actual": 127,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T08:00Z",
       "to": "2026-08-04T08:30Z",
       "intensity": {
-        "forecast": 262,
-        "actual": 257,
-        "index": "high"
+        "forecast": 120,
+        "actual": 122,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T08:30Z",
       "to": "2026-08-04T09:00Z",
       "intensity": {
-        "forecast": 269,
-        "actual": 264,
-        "index": "high"
+        "forecast": 93,
+        "actual": 112,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T09:00Z",
       "to": "2026-08-04T09:30Z",
       "intensity": {
-        "forecast": 276,
-        "actual": 271,
-        "index": "high"
+        "forecast": 106,
+        "actual": 105,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T09:30Z",
       "to": "2026-08-04T10:00Z",
       "intensity": {
-        "forecast": 153,
-        "actual": 148,
+        "forecast": 97,
+        "actual": 101,
         "index": "moderate"
       }
     },
@@ -184,8 +202,8 @@
       "from": "2026-08-04T10:00Z",
       "to": "2026-08-04T10:30Z",
       "intensity": {
-        "forecast": 160,
-        "actual": 155,
+        "forecast": 96,
+        "actual": 98,
         "index": "moderate"
       }
     },
@@ -193,8 +211,8 @@
       "from": "2026-08-04T10:30Z",
       "to": "2026-08-04T11:00Z",
       "intensity": {
-        "forecast": 167,
-        "actual": 162,
+        "forecast": 91,
+        "actual": 96,
         "index": "moderate"
       }
     },
@@ -202,8 +220,8 @@
       "from": "2026-08-04T11:00Z",
       "to": "2026-08-04T11:30Z",
       "intensity": {
-        "forecast": 174,
-        "actual": 169,
+        "forecast": 91,
+        "actual": 91,
         "index": "moderate"
       }
     },
@@ -211,80 +229,80 @@
       "from": "2026-08-04T11:30Z",
       "to": "2026-08-04T12:00Z",
       "intensity": {
-        "forecast": 181,
-        "actual": 176,
-        "index": "moderate"
+        "forecast": 81,
+        "actual": 89,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T12:00Z",
       "to": "2026-08-04T12:30Z",
       "intensity": {
-        "forecast": 188,
-        "actual": 183,
-        "index": "moderate"
+        "forecast": 80,
+        "actual": 87,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T12:30Z",
       "to": "2026-08-04T13:00Z",
       "intensity": {
-        "forecast": 195,
-        "actual": 190,
-        "index": "moderate"
+        "forecast": 80,
+        "actual": 89,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T13:00Z",
       "to": "2026-08-04T13:30Z",
       "intensity": {
-        "forecast": 202,
-        "actual": 197,
-        "index": "moderate"
+        "forecast": 83,
+        "actual": 87,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T13:30Z",
       "to": "2026-08-04T14:00Z",
       "intensity": {
-        "forecast": 209,
-        "actual": 204,
-        "index": "moderate"
+        "forecast": 82,
+        "actual": 86,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T14:00Z",
       "to": "2026-08-04T14:30Z",
       "intensity": {
-        "forecast": 216,
-        "actual": 211,
-        "index": "moderate"
+        "forecast": 77,
+        "actual": 84,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T14:30Z",
       "to": "2026-08-04T15:00Z",
       "intensity": {
-        "forecast": 223,
-        "actual": 218,
-        "index": "moderate"
+        "forecast": 74,
+        "actual": 79,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T15:00Z",
       "to": "2026-08-04T15:30Z",
       "intensity": {
-        "forecast": 230,
-        "actual": 225,
-        "index": "moderate"
+        "forecast": 79,
+        "actual": 88,
+        "index": "low"
       }
     },
     {
       "from": "2026-08-04T15:30Z",
       "to": "2026-08-04T16:00Z",
       "intensity": {
-        "forecast": 237,
-        "actual": 232,
+        "forecast": 80,
+        "actual": 100,
         "index": "moderate"
       }
     },
@@ -292,8 +310,8 @@
       "from": "2026-08-04T16:00Z",
       "to": "2026-08-04T16:30Z",
       "intensity": {
-        "forecast": 244,
-        "actual": 239,
+        "forecast": 100,
+        "actual": 104,
         "index": "moderate"
       }
     },
@@ -301,53 +319,53 @@
       "from": "2026-08-04T16:30Z",
       "to": "2026-08-04T17:00Z",
       "intensity": {
-        "forecast": 251,
-        "actual": 246,
-        "index": "high"
+        "forecast": 116,
+        "actual": 115,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T17:00Z",
       "to": "2026-08-04T17:30Z",
       "intensity": {
-        "forecast": 258,
-        "actual": 253,
-        "index": "high"
+        "forecast": 107,
+        "actual": 121,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T17:30Z",
       "to": "2026-08-04T18:00Z",
       "intensity": {
-        "forecast": 265,
-        "actual": 260,
-        "index": "high"
+        "forecast": 112,
+        "actual": 133,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T18:00Z",
       "to": "2026-08-04T18:30Z",
       "intensity": {
-        "forecast": 272,
-        "actual": 267,
-        "index": "high"
+        "forecast": 126,
+        "actual": 139,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T18:30Z",
       "to": "2026-08-04T19:00Z",
       "intensity": {
-        "forecast": 279,
-        "actual": 274,
-        "index": "high"
+        "forecast": 131,
+        "actual": 140,
+        "index": "moderate"
       }
     },
     {
       "from": "2026-08-04T19:00Z",
       "to": "2026-08-04T19:30Z",
       "intensity": {
-        "forecast": 156,
-        "actual": 151,
+        "forecast": 137,
+        "actual": 137,
         "index": "moderate"
       }
     },
@@ -355,8 +373,8 @@
       "from": "2026-08-04T19:30Z",
       "to": "2026-08-04T20:00Z",
       "intensity": {
-        "forecast": 163,
-        "actual": 158,
+        "forecast": 132,
+        "actual": 136,
         "index": "moderate"
       }
     },
@@ -364,8 +382,8 @@
       "from": "2026-08-04T20:00Z",
       "to": "2026-08-04T20:30Z",
       "intensity": {
-        "forecast": 170,
-        "actual": 165,
+        "forecast": 130,
+        "actual": 130,
         "index": "moderate"
       }
     },
@@ -373,8 +391,8 @@
       "from": "2026-08-04T20:30Z",
       "to": "2026-08-04T21:00Z",
       "intensity": {
-        "forecast": 177,
-        "actual": 172,
+        "forecast": 128,
+        "actual": 133,
         "index": "moderate"
       }
     },
@@ -382,8 +400,8 @@
       "from": "2026-08-04T21:00Z",
       "to": "2026-08-04T21:30Z",
       "intensity": {
-        "forecast": 184,
-        "actual": 179,
+        "forecast": 122,
+        "actual": 130,
         "index": "moderate"
       }
     },
@@ -391,8 +409,8 @@
       "from": "2026-08-04T21:30Z",
       "to": "2026-08-04T22:00Z",
       "intensity": {
-        "forecast": 191,
-        "actual": 186,
+        "forecast": 114,
+        "actual": 120,
         "index": "moderate"
       }
     },
@@ -400,8 +418,8 @@
       "from": "2026-08-04T22:00Z",
       "to": "2026-08-04T22:30Z",
       "intensity": {
-        "forecast": 198,
-        "actual": 193,
+        "forecast": 122,
+        "actual": 115,
         "index": "moderate"
       }
     },
@@ -409,26 +427,8 @@
       "from": "2026-08-04T22:30Z",
       "to": "2026-08-04T23:00Z",
       "intensity": {
-        "forecast": 205,
-        "actual": 200,
-        "index": "moderate"
-      }
-    },
-    {
-      "from": "2026-08-04T23:00Z",
-      "to": "2026-08-04T23:30Z",
-      "intensity": {
-        "forecast": 212,
-        "actual": null,
-        "index": "moderate"
-      }
-    },
-    {
-      "from": "2026-08-04T23:30Z",
-      "to": "2026-08-05T00:00Z",
-      "intensity": {
-        "forecast": 219,
-        "actual": null,
+        "forecast": 116,
+        "actual": 107,
         "index": "moderate"
       }
     }

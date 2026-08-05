@@ -50,7 +50,7 @@ def test_forecasts_are_never_substituted_for_missing_actuals() -> None:
 
 def test_a_day_too_sparse_to_average_returns_nothing() -> None:
     quote = parse_intensity(
-        fixture_json("carbon_intensity_partial.json"), instrument(**CARBON), day=DAY
+        fixture_json("synthetic_carbon_partial.json"), instrument(**CARBON), day=DAY
     )
     assert quote is None
 
