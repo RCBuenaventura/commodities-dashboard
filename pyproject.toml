@@ -1,0 +1,96 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "commodities-dashboard"
+description = "A static, daily-updating dashboard of energy and metals prices."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "RCBuenaventura" }]
+keywords = ["commodities", "energy", "metals", "dashboard", "static-site"]
+classifiers = [
+  "Private :: Do Not Upload",
+  "Programming Language :: Python :: 3.12",
+]
+dynamic = ["version"]
+dependencies = [
+  "httpx>=0.27",
+  "jinja2>=3.1",
+  "feedparser>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "mypy>=1.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/RCBuenaventura/commodities-dashboard"
+
+[tool.hatch.version]
+path = "src/dashboard/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dashboard"]
+
+# ---- ruff: lint and format ----
+
+[tool.ruff]
+line-length = 90
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+  "F",    # pyflakes
+  "E",    # pycodestyle errors
+  "W",    # pycodestyle warnings
+  "I",    # import sorting
+  "N",    # pep8-naming
+  "UP",   # pyupgrade
+  "ANN",  # missing annotations — mypy is strict, so these must be present
+  "B",    # bugbear
+  "C4",   # comprehensions
+  "DTZ",  # naive datetime use; this project is date-heavy
+  "PTH",  # pathlib over os.path
+  "SIM",  # simplifications
+  "TID",  # tidy imports
+  "T20",  # no print(); sources and the orchestrator log
+  "RUF",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Test functions do not need return annotations, and assert is the point.
+"tests/**" = ["ANN201", "S101"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "parents"
+
+[tool.ruff.lint.isort]
+known-first-party = ["dashboard"]
+
+# ---- mypy ----
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "tests"]
+warn_unreachable = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+
+[[tool.mypy.overrides]]
+# feedparser ships no type information.
+module = ["feedparser.*"]
+ignore_missing_imports = true
+
+# ---- pytest ----
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --strict-config"

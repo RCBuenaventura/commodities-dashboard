@@ -112,7 +112,7 @@ If the commodity needs a provider that isn't wired up yet, add a module under
 ## Roadmap
 
 - [x] Repository and licence
-- [ ] Project scaffold, tooling, `CLAUDE.md`
+- [x] Project scaffold, tooling, `CLAUDE.md`
 - [ ] Domain models and the `Source` protocol
 - [ ] Source modules (Yahoo, EIA, Elexon, Octopus, carbon, FX)
 - [ ] JSON store and fetch orchestrator
