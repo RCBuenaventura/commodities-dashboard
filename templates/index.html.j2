@@ -1,0 +1,82 @@
+{#
+  The dashboard page.
+
+  Every asset path is relative, because this is published under a repository
+  subpath on GitHub Pages (/commodities-dashboard/) and absolute paths would
+  resolve to the domain root.
+#}
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+{# viewport-fit=cover lets the page paint under the iPhone notch and home bar;
+   the CSS then pads content back out with env(safe-area-inset-*). #}
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Commodities</title>
+<meta name="description" content="Daily energy and metals prices, UK and global benchmarks.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0d1117">
+
+{# Home-screen install on iOS. apple-touch-icon must be a PNG; iOS ignores SVG. #}
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png" sizes="192x192">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Commodities">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Commodities</h1>
+  <p class="generated">Updated {{ page.generated_label }}</p>
+</header>
+
+{% if page.problems %}
+<section class="problems" aria-label="Data problems">
+  <h2>Some sources did not update</h2>
+  <ul>
+    {% for problem in page.problems %}
+    <li>{{ problem }}</li>
+    {% endfor %}
+  </ul>
+  <p>Affected tiles show the last value that was actually observed, with its date.</p>
+</section>
+{% endif %}
+
+<main>
+  {% for group in page.groups %}
+  <section class="group" aria-labelledby="group-{{ loop.index }}">
+    <h2 id="group-{{ loop.index }}">{{ group.name }}</h2>
+    <div class="tiles">
+      {% for tile in group.tiles %}
+      {% include "_tile.html.j2" %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</main>
+
+<footer>
+  {% if page.fx_note %}
+  <p>{{ page.fx_note }}</p>
+  {% endif %}
+  <p class="disclaimer">
+    Prices are indicative, may be delayed, and come from free public sources with no
+    guarantee of accuracy or availability. Several instruments are explicitly proxies
+    for contracts that have no free feed. <strong>Nothing here is investment
+    advice.</strong>
+  </p>
+  <p class="colophon">
+    Built from
+    <a href="https://github.com/RCBuenaventura/commodities-dashboard">commodities-dashboard</a>.
+    Price history lives in the repository.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

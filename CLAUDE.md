@@ -16,13 +16,19 @@ backend service, or a runtime API.
 
 ## Current state
 
-The repository is early. The scaffold has landed: `pyproject.toml` (hatchling, ruff, mypy,
-pytest), `src/dashboard/` as an installable package, a smoke-test suite, and
-`.github/workflows/ci.yml`. **None of the modules in the layout below exist yet** —
-`models.py`, `config.py`, `sources/`, `store.py`, `fetch.py` and `render.py` are all still
-to be written, as are `templates/`, `static/`, `data/`, `instruments.toml` and
-`update.yml`. Read before you assume: check what is actually on disk rather than trusting
-the layout section as a description of the present.
+Everything in the layout below now exists, and the roadmap in `README.md` is complete:
+the fetcher runs, the renderer produces `site/`, and `update.yml` publishes it to Pages
+daily. Read before you assume anyway — check what is on disk rather than trusting this
+paragraph to have kept up.
+
+Two things a new session should know:
+
+- **`tzdata` is a real runtime dependency on Windows.** The UK sources bucket
+  half-hourly readings by London local date, and Windows ships no IANA database, so
+  `ZoneInfo("Europe/London")` raises at import without it.
+- **The EIA parser is the only one never checked against a live response.** Its key
+  lives in a GitHub Actions secret, so local runs skip it. Its fixtures are synthetic
+  and labelled as such in `tests/fixtures/README.md`.
 
 The `Roadmap` section of `README.md` tracks what has landed. Update its checkboxes in the
 same change that lands the work.

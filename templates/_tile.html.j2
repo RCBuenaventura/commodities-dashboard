@@ -1,0 +1,65 @@
+{#
+  One instrument.
+
+  The observation date is always rendered, never conditionally: a value with no date
+  beside it is exactly how a stale price passes for a current one.
+
+  The proxy caveat is likewise unconditional whenever config carries one. Do not wrap
+  it in anything that could hide it on a narrow screen — see rule 3 in CLAUDE.md.
+#}
+<article class="tile{% if tile.stale %} tile--stale{% endif %}{% if not tile.has_value %} tile--empty{% endif %}"
+         id="tile-{{ tile.id }}">
+
+  <header class="tile__head">
+    <h3 class="tile__name">{{ tile.name }}</h3>
+    <span class="tile__unit">{{ tile.unit }}</span>
+  </header>
+
+  {% if tile.has_value %}
+  <p class="tile__value">
+    {{ tile.value }}
+    {% if tile.change %}
+    <span class="tile__change tile__change--{{ tile.direction }}">
+      {{ tile.change }}{% if tile.change_pct %} ({{ tile.change_pct }}){% endif %}
+    </span>
+    {% endif %}
+  </p>
+
+  {% if tile.sterling %}
+  <p class="tile__sterling">≈ {{ tile.sterling }}</p>
+  {% endif %}
+
+  {% if tile.spark %}
+  <svg class="tile__spark tile__spark--{{ tile.direction }}"
+       viewBox="0 0 100 28" preserveAspectRatio="none"
+       role="img" aria-label="Recent trend for {{ tile.name }}">
+    <polyline points="{{ tile.spark }}" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"
+              vector-effect="non-scaling-stroke"/>
+  </svg>
+  {% endif %}
+
+  <p class="tile__observed">
+    {% if tile.stale %}<span class="badge badge--stale">stale</span>{% endif %}
+    <span>as of {{ tile.observed_label }}</span>
+  </p>
+  {% else %}
+  <p class="tile__value tile__value--none">—</p>
+  <p class="tile__observed"><span>{{ tile.observed_label }}</span></p>
+  {% endif %}
+
+  {% if tile.proxy %}
+  <p class="tile__proxy"><span class="badge badge--proxy">proxy</span> {{ tile.proxy }}</p>
+  {% endif %}
+
+  {% if tile.news %}
+  <ul class="tile__news">
+    {% for item in tile.news %}
+    <li>
+      <a href="{{ item.url }}" rel="noopener noreferrer" target="_blank">{{ item.title }}</a>
+      <span class="tile__source">{{ item.source }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
