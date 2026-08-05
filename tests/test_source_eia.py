@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 from datetime import date
 
 import pytest
@@ -84,6 +85,35 @@ def test_http_failure_raises(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv(API_KEY_ENV, "not-a-real-key")
     with pytest.raises(FetchError):
         EIASource(client=error_client(503)).fetch([instrument(**PROPANE)])
+
+
+def test_the_api_key_never_reaches_the_log(caplog: pytest.LogCaptureFixture) -> None:
+    """httpx logs whole request URLs at INFO, and the key is a query parameter.
+
+    On a public repository the Actions log is world-readable. GitHub masks
+    registered secrets in Actions output, but a local run, a pasted traceback, or a
+    key set as a plain variable would all leak it, so the run must not rely on that.
+
+    The root logger is raised to DEBUG here deliberately: the point is that httpx's
+    own level suppresses the record even when everything around it is verbose.
+    """
+    from dashboard.fetch import _quieten_http_logging
+
+    httpx_logger = logging.getLogger("httpx")
+    original = httpx_logger.level
+    try:
+        _quieten_http_logging()
+        secret = "SUPERSECRETKEYVALUE1234567890abcd"
+        source = EIASource(
+            api_key=secret,
+            client=json_client(fixture_json("synthetic_eia_propane.json")),
+        )
+        with caplog.at_level(logging.DEBUG):
+            source.fetch([instrument(**PROPANE)])
+
+        assert secret not in caplog.text
+    finally:
+        httpx_logger.setLevel(original)
 
 
 def test_the_api_key_never_reaches_an_error_message() -> None:

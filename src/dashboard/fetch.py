@@ -172,6 +172,20 @@ def _failed(
     )
 
 
+def _quieten_http_logging() -> None:
+    """Stop httpx logging full request URLs.
+
+    The EIA key travels as a query parameter, and httpx logs the whole URL at INFO,
+    so a plain run writes the credential into its own output. GitHub masks registered
+    secrets in Actions logs, but that is a safety net over a mistake rather than a
+    reason to make it: a local run, a pasted traceback or a key set as a plain
+    variable would all leak it. This module's own per-source logging says more about
+    what happened anyway.
+    """
+    for name in ("httpx", "httpcore"):
+        logging.getLogger(name).setLevel(logging.WARNING)
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, prog="python -m dashboard.fetch"
@@ -187,6 +201,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         format="%(levelname)-7s %(name)s: %(message)s",
         stream=sys.stderr,
     )
+    _quieten_http_logging()
 
     try:
         config = load_config(args.config)
