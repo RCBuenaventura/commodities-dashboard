@@ -1,0 +1,7 @@
+{
+  "instrument": "gbpeur",
+  "unit": "EUR per GBP",
+  "points": [
+    {"d": "2026-08-05", "v": 1.1666}
+  ]
+}
