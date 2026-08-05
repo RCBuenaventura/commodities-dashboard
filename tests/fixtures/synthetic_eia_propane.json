@@ -6,7 +6,7 @@
     "description": "Propane spot prices, free on board",
     "data": [
       {
-        "period": "2026-08-07",
+        "period": "2026-08-05",
         "duoarea": "Y44MB",
         "area-name": "MONT BELVIEU, TX",
         "product": "EPLLPA",
@@ -19,21 +19,21 @@
         "units": "$/GAL"
       },
       {
-        "period": "2026-08-06",
+        "period": "2026-08-04",
         "duoarea": "Y44MB",
         "series": "EER_EPLLPA_PF4_Y44MB_DPG",
         "value": null,
         "units": "$/GAL"
       },
       {
-        "period": "2026-08-05",
+        "period": "2026-08-03",
         "duoarea": "Y44MB",
         "series": "EER_EPLLPA_PF4_Y44MB_DPG",
         "value": "0.8021",
         "units": "$/GAL"
       },
       {
-        "period": "2026-08-04",
+        "period": "2026-08-02",
         "duoarea": "Y44MB",
         "series": "EER_EPLLPA_PF4_Y44MB_DPG",
         "value": 0.7998,

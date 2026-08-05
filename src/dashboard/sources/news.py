@@ -35,6 +35,9 @@ FEED_URL: Final = "https://news.google.com/rss/search?q={query}&hl=en-GB&gl=GB&c
 #: Headlines kept per instrument. The page is a dashboard, not a reader.
 MAX_ITEMS: Final = 4
 
+#: Sort key for an entry with no parseable date, so it lands last.
+_OLDEST: Final = datetime.min.replace(tzinfo=UTC)
+
 
 class NewsSource:
     """Headlines per instrument. Never raises; an empty list is an acceptable answer."""
@@ -76,10 +79,16 @@ class NewsSource:
 
 
 def parse_feed(payload: bytes | str, *, limit: int = MAX_ITEMS) -> list[NewsItem]:
-    """Parse an RSS body into news items, newest first."""
+    """Parse an RSS body into news items, newest first.
+
+    Google News orders its results by relevance, not by date, so the whole feed is
+    parsed and then sorted before truncating — taking the first `limit` entries as
+    they arrive would silently drop newer headlines in favour of older ones.
+    Undated entries sort last rather than being guessed a timestamp.
+    """
     parsed = feedparser.parse(payload)
     items: list[NewsItem] = []
-    for entry in parsed.entries[: limit * 2]:
+    for entry in parsed.entries:
         title = _text(entry, "title")
         link = _text(entry, "link")
         if not title or not link:
@@ -92,9 +101,9 @@ def parse_feed(payload: bytes | str, *, limit: int = MAX_ITEMS) -> list[NewsItem
                 published=_published(entry),
             )
         )
-        if len(items) >= limit:
-            break
-    return items
+
+    items.sort(key=lambda item: item.published or _OLDEST, reverse=True)
+    return items[:limit]
 
 
 def _text(entry: Mapping[str, Any], key: str) -> str:

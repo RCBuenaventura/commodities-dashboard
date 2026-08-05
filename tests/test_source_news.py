@@ -11,20 +11,32 @@ from dashboard.sources.news import NewsSource, parse_feed
 
 
 def test_parses_google_news_rss() -> None:
-    items = parse_feed(fixture_text("google_news.xml"))
-    assert len(items) == 3
-    assert items[0].title == "Brent settles higher as OPEC+ holds output steady"
-    assert items[0].url.startswith("https://news.google.com/")
+    items = parse_feed(fixture_text("google_news.xml"), limit=6)
+    assert len(items) == 6
+    assert all(i.title for i in items)
+    assert all(i.url.startswith("https://news.google.com/") for i in items)
 
 
 def test_publisher_comes_from_the_nested_source_element() -> None:
-    items = parse_feed(fixture_text("google_news.xml"))
-    assert [i.source for i in items] == ["Reuters", "Argus Media", "Bloomberg"]
+    """Google News nests the originating publication rather than using dc:creator."""
+    items = parse_feed(fixture_text("google_news.xml"), limit=6)
+    assert all(i.source for i in items)
+    assert all(i.source != "Google News" for i in items)
 
 
 def test_published_times_are_timezone_aware() -> None:
-    items = parse_feed(fixture_text("google_news.xml"))
-    assert items[0].published == datetime(2026, 8, 4, 17, 42, tzinfo=UTC)
+    items = parse_feed(fixture_text("google_news.xml"), limit=6)
+    assert all(i.published is not None for i in items)
+    assert all(i.published.tzinfo is UTC for i in items if i.published)
+    assert items[0].published == datetime(2026, 8, 5, 0, 0, tzinfo=UTC)
+
+
+def test_items_come_back_newest_first() -> None:
+    items = [
+        i for i in parse_feed(fixture_text("google_news.xml"), limit=6) if i.published
+    ]
+    stamps = [i.published for i in items if i.published]
+    assert stamps == sorted(stamps, reverse=True)
 
 
 def test_limit_is_respected() -> None:
@@ -47,7 +59,7 @@ def test_fetch_keys_headlines_by_instrument() -> None:
     client = mock_client(lambda _r: httpx.Response(200, content=body))
     headlines = NewsSource(client=client).fetch([instrument(news="Brent crude")])
     assert list(headlines) == ["brent"]
-    assert len(headlines["brent"]) == 3
+    assert len(headlines["brent"]) == 4
 
 
 def test_instruments_without_a_term_are_skipped() -> None:

@@ -1,4 +1,9 @@
-"""Octopus Agile: London-day bucketing, negative rates, partial-day refusal."""
+"""Octopus Agile: London-day bucketing, negative rates, partial-day refusal.
+
+The fixture is three real days of half-hourly Agile rates, and it happens to contain
+genuinely negative periods — so the negative-rate guard is tested against real data
+rather than an invented case.
+"""
 
 from __future__ import annotations
 
@@ -20,20 +25,36 @@ AGILE = {
 TODAY = date(2026, 8, 5)
 
 
-def test_averages_a_full_london_day() -> None:
-    """The fixture's 48 periods run 23:00Z to 23:00Z — one BST day, not one UTC day."""
+def test_averages_complete_london_days() -> None:
+    """Periods run 23:00Z to 23:00Z in BST — one London day, not one UTC day."""
     quotes = parse_unit_rates(
         fixture_json("octopus_agile.json"), instrument(**AGILE), today=TODAY
     )
-    assert [q.observed for q in quotes] == [date(2026, 8, 4)]
+    assert [q.observed for q in quotes] == [date(2026, 8, 3), date(2026, 8, 4)]
 
 
-def test_negative_rates_are_included_in_the_average() -> None:
-    """Agile goes negative; dropping those periods would overstate the day."""
-    quotes = parse_unit_rates(
-        fixture_json("octopus_agile.json"), instrument(**AGILE), today=TODAY
-    )
-    assert quotes[0].value < 16.0
+def test_the_fixture_really_does_contain_negative_rates() -> None:
+    """Guards the guard: if the fixture stopped having negatives, the next test
+    would keep passing while proving nothing."""
+    rates = [r["value_inc_vat"] for r in fixture_json("octopus_agile.json")["results"]]
+    assert min(rates) < 0
+
+
+def test_negative_rates_are_kept_in_the_average() -> None:
+    """Agile goes negative when the grid is long. Those are real prices.
+
+    Dropping them as though they were bad data would bias every day upward, so the
+    day's mean is checked against the mean of every period in that London day.
+    """
+    payload = fixture_json("octopus_agile.json")
+    quotes = parse_unit_rates(payload, instrument(**AGILE), today=TODAY)
+    day_three = [
+        r["value_inc_vat"]
+        for r in payload["results"]
+        if r["valid_from"].startswith(("2026-08-02T23", "2026-08-03T"))
+        and r["valid_from"] < "2026-08-03T23"
+    ]
+    assert quotes[0].value == pytest.approx(sum(day_three) / len(day_three))
 
 
 def test_a_partial_day_is_skipped() -> None:
@@ -58,8 +79,8 @@ def test_fetch_end_to_end() -> None:
         client=json_client(fixture_json("octopus_agile.json")), today=TODAY
     )
     quotes = source.fetch([instrument(**AGILE)])
-    assert len(quotes) == 1
-    assert quotes[0].unit == "p/kWh"
+    assert len(quotes) == 2
+    assert all(q.unit == "p/kWh" for q in quotes)
 
 
 def test_symbol_must_carry_product_and_tariff() -> None:

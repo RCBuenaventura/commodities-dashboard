@@ -5,12 +5,11 @@
         "meta": {
           "currency": "GBp",
           "symbol": "BZ=F",
-          "gmtoffset": 0,
-          "regularMarketPrice": 6431.0
+          "gmtoffset": 0
         },
         "timestamp": [
-          1785850200,
-          1785936600
+          1783310400,
+          1783396800
         ],
         "indicators": {
           "quote": [

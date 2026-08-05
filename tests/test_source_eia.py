@@ -19,28 +19,34 @@ PROPANE = {
 
 
 def test_parses_rows_oldest_first() -> None:
-    quotes = parse_series(fixture_json("eia_propane.json"), instrument(**PROPANE))
+    quotes = parse_series(
+        fixture_json("synthetic_eia_propane.json"), instrument(**PROPANE)
+    )
     assert [q.observed for q in quotes] == [
-        date(2026, 8, 4),
+        date(2026, 8, 2),
+        date(2026, 8, 3),
         date(2026, 8, 5),
-        date(2026, 8, 7),
     ]
 
 
 def test_null_values_are_skipped() -> None:
-    quotes = parse_series(fixture_json("eia_propane.json"), instrument(**PROPANE))
-    assert date(2026, 8, 6) not in {q.observed for q in quotes}
+    quotes = parse_series(
+        fixture_json("synthetic_eia_propane.json"), instrument(**PROPANE)
+    )
+    assert date(2026, 8, 4) not in {q.observed for q in quotes}
 
 
 def test_numeric_strings_are_accepted() -> None:
     """Some EIA datasets return values as strings."""
-    quotes = parse_series(fixture_json("eia_propane.json"), instrument(**PROPANE))
-    assert next(q for q in quotes if q.observed == date(2026, 8, 5)).value == 0.8021
+    quotes = parse_series(
+        fixture_json("synthetic_eia_propane.json"), instrument(**PROPANE)
+    )
+    assert next(q for q in quotes if q.observed == date(2026, 8, 3)).value == 0.8021
 
 
 def test_api_error_payload_raises() -> None:
     with pytest.raises(FetchError, match="api_key"):
-        parse_series(fixture_json("eia_bad_key.json"), instrument(**PROPANE))
+        parse_series(fixture_json("synthetic_eia_bad_key.json"), instrument(**PROPANE))
 
 
 @pytest.mark.parametrize(
@@ -63,13 +69,13 @@ def test_missing_key_is_reported_not_silently_skipped(
 
 def test_key_is_read_from_the_environment(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv(API_KEY_ENV, "not-a-real-key")
-    source = EIASource(client=json_client(fixture_json("eia_propane.json")))
+    source = EIASource(client=json_client(fixture_json("synthetic_eia_propane.json")))
     assert len(source.fetch([instrument(**PROPANE)])) == 3
 
 
 def test_symbol_must_carry_its_route(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv(API_KEY_ENV, "not-a-real-key")
-    source = EIASource(client=json_client(fixture_json("eia_propane.json")))
+    source = EIASource(client=json_client(fixture_json("synthetic_eia_propane.json")))
     with pytest.raises(FetchError, match="no series returned data"):
         source.fetch([instrument(**{**PROPANE, "symbol": "EER_EPLLPA_PF4_Y44MB_DPG"})])
 
