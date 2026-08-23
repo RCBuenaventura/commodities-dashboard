@@ -1,85 +1,97 @@
 {
-  "generated": "2026-08-22T07:02:41.827788+00:00",
+  "generated": "2026-08-23T07:04:49.400059+00:00",
   "instruments": {
     "brent": [
       {
-        "title": "TotalEnergies stock trades steady as oil prices edge higher - Ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMThLUVVyRW5oREo3dFlfY2NzcXpHV3E1RTA0UFdKMURSZUdqQ1dwcFVyZ2tZNGU5WVR5MHA5eW82cXRsWFdXVjdOMkxReXFhWGlteXJTMWtYc3RpQklMa0RLUnZnVGxrclNibHB1eVlDSWF5S20yUzlGYkVrUTdLVzQ5R3JSeVNsMzN6X2RLdGlZUXBmd21rYjlrZ0RYaEI5NXJwN1FlREFqVkRxMTNYUUNhMmlia0pUdW5kUXZENA?oc=5",
-        "source": "Ad-hoc-news.de",
-        "published": "2026-08-22T06:15:40+00:00"
-      },
-      {
-        "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
-        "source": "LiteFinance",
-        "published": "2026-08-22T00:22:20+00:00"
+        "title": "U.S. Stocks Fall After Weak Earnings Reports - WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPblZ4TkNlLXdkaVh0UUV2LVlVTkt5QW9KSjFuN1M4Z1k1Ti13SHFxZVdyMXpvV1h2czlUZURJV253eWtRdW0yWkhIVEdIUEE3b1BLTld6T2toUkRSYUx1VjFQb21sMmpvUjBGV3NPSjAyYjlBQjUxTVJqeVFJX25zdkppUHFfTUFjX3pJSG5RWnduT2Y4WlN6RkJfTUdpYjJrSnlTTVRreXhRdlVwU285Y05GMA?oc=5",
+        "source": "WSJ",
+        "published": "2026-08-23T00:53:01+00:00"
       },
       {
         "title": "Global crude oil prices surged | Akashvani News - News On AIR",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlcDBycXp3TzV0ZFJfaFNIV25SdkxwYnJRS0wwdVM4YlE0am92cnpHQXVUaG90MlA0SHN1RkxXMXk2bWFDWmFHX0FGYWVnZ1dOUVJNRDV0d2ZncnQ4T1NOR28teGgtZmc?oc=5",
         "source": "News On AIR",
-        "published": "2026-08-21T20:01:58+00:00"
+        "published": "2026-08-22T21:17:38+00:00"
       },
       {
-        "title": "Crude Oil Prices Decline Amidst Supply Risk Concern - MarketForces Africa",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORVZUOEEzRzNLOG1BbUxNalN4dnIyd3NHWHVjYkNnZ0RUSnJyZU5VTGpuZUFtVzJCQU14am9HSURtWm5tcEt6OVdYWXdTX203NDV4ZWQxUlJBOXlqdzdCRGdnamREZC04endhQlhNN05jQVR2bWZ6T055aW1fRWlKNjJSdnU?oc=5",
-        "source": "MarketForces Africa",
-        "published": "2026-08-21T19:44:04+00:00"
+        "title": "Personal Finance: Oil prices are high. But why aren’t they higher? - Chattanooga Times Free Press",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcjhsUGZBMTZMdW4xRXVGS2VZN1ROYzQ3NE9vYjRrMlFVNnM4T1Q3VlZTMktBVU9SUDlQUzlCcy1ZR0ZvYXF6SkxBeUd1Y05NU2owRFdmR1JqaUh4OE1ZcnoxQ0htNHJYTzJSOEwzeldONDZZUWhHOE5rUkVBZm5GT2hsYnhvQkJSa2N1UmJjTk04UUxXdDBBVg?oc=5",
+        "source": "Chattanooga Times Free Press",
+        "published": "2026-08-22T16:00:00+00:00"
+      },
+      {
+        "title": "Morgan Stanley Lowers Oil Price Forecasts After US-Iran Peace Deal - EnergyNow.com",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSVctRUFVM1l4Z3VNRnhLZVN0dV9KMENjZW1wWWo4eXJycklOLTdJSkJNSm9qbTB4WDB5OUFsaktnUDc0V2JheDl0eUZoZk43bVpCMjhSTEFJeXNpeWhlc1FhZnhvOXN3Q3B4R0ppbkM3ZmJreFpEbUd3Y3A3WmxTY2Jla1RzSXUwekdNV1l4bnlZOEw3bG85TUt2S08wRm9FNkNlajRR?oc=5",
+        "source": "EnergyNow.com",
+        "published": "2026-08-22T12:34:45+00:00"
       }
     ],
     "copper": [
       {
-        "title": "Italy Low Copper and EV Brake Pads - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk5qdW1fVVptWU1FODhLQlFRRGFXbW1YNU9Sd0NEMExXQVhZVHdQVWl4YlJxYndJU2pNdnRtdUo3Mmc5emlxU1JKN21INmEwdnlwdHoxLUZNLUhocGNONTNlRHpGWFJKbHFBcTBxcDBPZkpaODBHWC1TRnA0XzJHZTlJMm5ldXh3SE9xZHN5VHk3WTJ4OHZUMFFDRGFGakdENTZuMFY0S01zRHNGTU5OZHR4ekVUUQ?oc=5",
+        "title": "The price difference between primary metal and scrap has widened, but it is not solely due to rising copper prices! - Shanghai Metals Market",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSld0QkJxb2VOeGFUSEdaUzZQZzVZTmJPaVN1TksxSEJ1UFh5WDVQVWtaT2VXX3hLN3FNb0hBMk1pX0EwUjJKcnQ2V0tjYmdicC1WVi05cERHWnhtam10eEhCdDdRMHM4eUYzaEZaZFYzQ3g1RW92R21JUUtRQjI2ZUJMNEVXNFdoY1puazRUZ2o2ZGRxWkFVZVJJTmVBRUpfajFJa1doa0M4ZnBQRkphS3ZoVjU0U0laNGFTa1Q4OEp4ZnA3ZHVDX1V4b3BVM2RRYl9sajVfV3doa3hhNkR3S1MxcjNKZngySFUxaVFEX1JZS2s?oc=5",
+        "source": "Shanghai Metals Market",
+        "published": "2026-08-23T05:43:11+00:00"
+      },
+      {
+        "title": "Copper Prices Climb on Supply Fears, Lifting Related Stocks - Seoul Economic Daily",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQlVtd2RMZGpyZXo0UWpqTzVVRzRWN1pPT0lUTTN2Y1dVVUFmdjBqQVhyZi05YkYwQUJfV3JSYmRkTC1sT1JZZjIxaFFTb1NVUmhtWVlmbXlEMXBEQi1mM1BUbms3VVdZb1BvVXBqUmNpRkEwdHBPR0hTekotRUJtNXp2UFZPcVlqRGVfOWwtRGJ6NVItVUVudEVQZ1ZCNTdwSFE?oc=5",
+        "source": "Seoul Economic Daily",
+        "published": "2026-08-23T01:44:53+00:00"
+      },
+      {
+        "title": "Copper-Clad Aluminum Armor Market To Double by 2035 on BESS Cost Mandates - News and Statistics - IndexBox",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWlQwZmR6bHVaTjU1MUlYTUhNTnVkX1dwdDNaVzBIQndFc0oydWpPTzlfb0lnLUw3UXdhNDZ5ODhnZ1hOa0ZaZzk1UUdBekcwQzh2QS1SNi1sb2NVbklscmFlYl9PSUpjNVhxM3Ffb1JaMnIwOEo0SFl4YkRGa3RzZVItdU95UEFsZXliUGp0dDhCb3phaU13ZjdFWEFGbWdwZi1JekN1X25GN2JBTUM4Zkp3?oc=5",
         "source": "IndexBox",
-        "published": "2026-08-22T04:10:29+00:00"
+        "published": "2026-08-22T13:46:20+00:00"
       },
       {
         "title": "Copper Prices Approach Record Highs as AI Data Centers and Supply Tightness Converge: Which US Copper Stocks Are Worth Watching? - TradingKey",
         "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNN1BzVVB1QVpXanRkYU43VDBkMUtHYlRiRzZiRGJrTzQ3RlBMdkwyaGgyLXZoUE45Sk44VldsZzB1TEd5LWwxRE1vZG5XY185aUIzMkc3Ni05eUwtNGlWcGx4MDBLWHd2Vy1ZNUdoTG5jRVJCN01pejFmMWhoczFwTkdualNzVHdRcFFrRmVnQ3pBMU1VZUVRTUlxOWhCdDBBUFRWNkcwcDJzcEZjclpSZ3RLZ2NQV3Zkd2o3SG9WMUpLelE?oc=5",
         "source": "TradingKey",
-        "published": "2026-08-22T02:06:53+00:00"
-      },
-      {
-        "title": "This Mining Stock Is Quietly One of the Best Trades in Energy - The Globe and Mail",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdDZrM25ET0hJTmFWR3RLSGREeXpsMktNWDZBaUJ4d0ZyejJlT0FEWmtRb3FoY2xkNjZnb2NrNF9SM2lWWUpJTV96REs1Q0FwTlhodzVMZmt4aEZ6NW1Zdjg5LUMzd0lJdXo4TUM2aWRPQ3JNbkZzaEwwc3VJRkdOcFBQZnUxSWlWaVJQbUpxaTZpQWpEMzBsa2wwdVVDVXB3MHkzbTVkMUhyR3Z2Rjg5UlhFcTczWllLMDZWNVk4V01VbEVRSDQydndVb0pmNXNscHNBRWZDdVFUMENVdmdNYW9R?oc=5",
-        "source": "The Globe and Mail",
-        "published": "2026-08-22T00:35:28+00:00"
-      },
-      {
-        "title": "Antofagasta stock jumps as Chile storms force a cut to 2026 copper guidance - Ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTGZ5cTdmbk5LODRlS1lwd3NIRjZNZnlSZWdVT0xMNGxmRW9GaGhOeEZwNEpoUFF0ZjJTdklmZGwtWWxMSk04SGxQdk9nV183VmluVGd6TTNKT1BWaldLOTkxR1lhdXg0aGtib2xkUEtnY3B1bmlIeTYyUkhZeVROeXg1YXp4N0FzTXQ3bTZfbG9aWklQemJzMHpKTnhzdTZaY2haSnRVVnRmNDZSYUhtNDV3SEZzNkxIXzJNc0xUd0E4cWVGamdMMw?oc=5",
-        "source": "Ad-hoc-news.de",
-        "published": "2026-08-21T19:15:16+00:00"
+        "published": "2026-08-22T11:07:30+00:00"
       }
     ],
     "gold": [
       {
-        "title": "Gold price rises by Tk 5,482 per bhori - The Financial Express",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaHhVanBuc0ZncTNZOUxCUnF3eWt3ekk5YWJ1VTYyVDNtVHhyUVY4MjBVZ0hBMFhIUklnQlU0aTh3U1pZWHNjU3ptUGdCbS1RcWl1eVRoVEE4MXhCMV91NERWeHBxTDVfYm1PZ1NIZVJCTDRRTkhFOXlUQktycXBNRTRhVnI?oc=5",
-        "source": "The Financial Express",
-        "published": "2026-08-22T06:44:26+00:00"
+        "title": "Gold price up by Rs 2,800 per tola today - Khabarhub",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAxcm93dTlzR1dJVXZKTlR4MEtGUEFkbDM4SEEtc2FTN0lyOW1rV01OU3dXaGZwLUZCQ1oyWkNxYmNiWDcwWFZDNE5rTkhyTE04a3FNRHNTc1k?oc=5",
+        "source": "Khabarhub",
+        "published": "2026-08-23T06:23:38+00:00"
       },
       {
-        "title": "Gold price jumps Tk 5,482 per bhori - Daily Observer",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA1cmNkdDhDb0VuVFZWZjI1akhiQ2lCcm9rZGMzbTFiUkZxNmdUcW5ncUtMOWRiVDl1ZUdFcGxkSk1wcE1faGhzc2NB?oc=5",
-        "source": "Daily Observer",
-        "published": "2026-08-22T06:17:20+00:00"
+        "title": "Gold prices in Dubai: Will 24K hit Dh600 per gram again? - Khaleej Times",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcm9zTHNUajNBSThLMGV5VDFUOFRVcFFyemZuTUkyUnRXN3hHZjJDZElpLUI5M1hRQ0FLM2JhdmxyY0ZRdkxEZnhiWFpfX2lMZEN0bnQ2LU9xTjg4UFVtUnBGS0h4U2pFVllWQWFIcW90cV9BWnA1c1VteUhJTl9Nd3REbmwwUE92WXFMSFZhQUhEMXpDXzg00gGfAUFVX3lxTE5fbUZnSmRvaVZIUUtJblVMWnI5MGdiVmRsNE83RzhST3c1bzJMMXNaYmY2eFJDWTVqU041bEpRdmlwU084MEdHZzRRSkhjTTBqNzVJSHZTel9qdUdycE9zVkNNVlBtWGFoWFFXQ0dBWW43WlJYUHBnV1hLdlFoUnM0amt3WlctdmgtaExWWWRKRlU0TFpOLWRLNHhPUG9pSQ?oc=5",
+        "source": "Khaleej Times",
+        "published": "2026-08-23T06:23:18+00:00"
       },
       {
-        "title": "Gold price rises by Tk 5,482 per bhori in one go - Prothom Alo English",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBFR3JFTU5QMlRXVVNySWkwMDcyNWNMNjdVVW96NmU1eFlpczUwdE14T19tUGNmcGpHQ1RnaXJUY2pDbFJ4SjFOZlFMN2c2Um5iZWpnOVJ0YnpxaVN6Q1VsddIBbkFVX3lxTE1LZEdjR1AyaWs3QWV3VmxWNU9mNkxoMVo2WHB2MzdnV1BtaUF2eHBRY0tVYVRiZ1VseDlfRTVONHlkcmJzUWw1cnJxaGEyc041NFEyNjdibjVtN0VKZl8zbjc1cXFJamZ5RlpiN0dB?oc=5",
-        "source": "Prothom Alo English",
-        "published": "2026-08-22T06:08:30+00:00"
+        "title": "Gold price rises Rs 2,800 per tola, silver declines - NepalNews",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcnZ4TUVHR1dMRTl3YllNVEdJNDhiNXhMTnJuTjV4Y0dzV0lZLXdsYVRyZGw3VDJxMmg3RnE3MU04b25uM1RXZ1R5SzY4SnN0RmFueThNV19PRE92ZS1nQkNFNzcxbVNNNy1FeGhkbVp3OTBuY0g2WW94QjJuWHh4TWktakxuWk5mUGRPbEFRdXlKOEctbmc?oc=5",
+        "source": "NepalNews",
+        "published": "2026-08-23T06:07:56+00:00"
       },
       {
-        "title": "Gold price jumps again, up Tk 5,482 per bhori - Views Bangladesh",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9feGsyTy1NU1B1RGlzUEFIYlB1UnowZmtQY0RDX0dSVUp5S3pvOTREc3l0TWdLN1Rxc3N1QWIzX3FFanBXZ2ZoYm0wcWNVeV9Fdm43RW16Rjl5MUJLYUMyQkJmOEpLUl9qY2hlOF9wNWtUTUthekcxdDFLeFc?oc=5",
-        "source": "Views Bangladesh",
-        "published": "2026-08-22T05:56:26+00:00"
+        "title": "Gold price rises by Rs 2,800 - OnlineKhabar English News",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1YN3NzNTZmZllwdzlXVjZKSlZhNU03UWU4TUNzVnhJckdIUXVWRXN6bUI0Yll6cVVQZ0g5N1VoY3lDaUpSTVVqVWY0RzNfYlFoOHgzMWVydWI5aE53ZDJGUmU3ZF9VdmM?oc=5",
+        "source": "OnlineKhabar English News",
+        "published": "2026-08-23T05:53:30+00:00"
       }
     ],
     "henry_hub": [
+      {
+        "title": "T&T’s downstream industry challenged by NGC’s high gas prices - Trinidad Guardian",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQkN5cnZna3hyVzREWUtoT0Rjb2p5UHVkUVFtMVdhVTMwUlViTkNqdEVSY3dfYVM3bG52aWxMLU5VV0Nuc1BtM2ppWDJJYzdWS1lLcG9pX2VDRWdIQm9LaG9feW9ObEFjbHFFYWFENjg4VVg5ODYxVEQzX2twZHl3UTcyR0tiVXJiRXJNZWJacUdEMmVZSTZYX2l0WFV2MFpSN01lb2dDNTlvbWl6dXNCUTZKdTM2ZGM?oc=5",
+        "source": "Trinidad Guardian",
+        "published": "2026-08-22T23:54:44+00:00"
+      },
+      {
+        "title": "Heatwaves sweep across multiple regions of the U.S., pushing natural gas futures up by approximately 2%, as Texas power demand may continue to break records. - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOem5wSXlreWdRSl9TNXpEQlphUnFReG1vbnJCOXNBY21LdjlKbHdabWl0c0Q3TkZqeEdla3JMcTFJUDJIWXVkdWtkcWtMX2cybDhELUx5aHNsVmNIZl85NDhna1NhWW1SS0phcWoxWEhPRDZ4SEV6cENxU1o1Y1R3bmZ4SmZWYU9ST2p2N2E1bTEwQjVEWTVudEFON2pJS1lCa1ZfaHc2cFlTb2M?oc=5",
+        "source": "Moomoo",
+        "published": "2026-08-22T10:13:05+00:00"
+      },
       {
         "title": "Gunvor's LNG deal: Cheap long-term promise masked by expensive start - The Business Standard",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZVk3ZlhLYkR3VTJWbVczZzA1SWc0NmhJdENjLWItOXdRUUREZXEzRTV4NmRXbFg5ajFkT2N3dGVHMS1LWGRyNHpDUFQwWkdzMGhkVndrbHFQRkF2MFBfcWxjNXZYTC1wQTN0TkdYRmRDeHdBLWlvMUtVOGpRU2VFTmhOcXpodE81cGhJYlJkUmF4Y1pzR0I2RTJNUEt6V0M1MnlGdFRmc2p4Ynp5UzdDVVFQQdIBuAFBVV95cUxPanJIeTBPYlNOUjFTUW0tVmp1N052akYtaDZXYVlGZF91S3I3NmktaENGMEl4c3FqYUIzYmRKQmt0RFltWU1wbGN0ZGR3X2s1U1hwb21MeVl3QWs1OENoQVdXR3pobmR3UVN2WG5oaDl6VDlyUjMwU3pQUWVFQWtJSnV5TnhydVVzdWlCb1AtelhoNGF5dGZRc18ySVZCY1dHWVNVbkNvT2xqMjFRQ1NkcWxWSi1ZRGxD?oc=5",
@@ -87,22 +99,10 @@
         "published": "2026-08-22T06:30:00+00:00"
       },
       {
-        "title": "Is Natural Gas the Real AI Bottleneck? ...Warning of a 'Gas Crisis' by 2028 [Tech Talk] - 아시아경제",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB2MFZocEdwZC02aFdIb0xKdVZWQ3VTOWtVNFFFLXVOSXhiaUlod2lxRmlGczZ2ZWU4Ukx0OWNJOVc3WldIS1NCRTJKYnNKdmp0WlJzeGJULVJ5aGxpS1VkYVpKbHE?oc=5",
-        "source": "아시아경제",
-        "published": "2026-08-21T22:11:00+00:00"
-      },
-      {
         "title": "Cash Prices Fizzle as Eastern Natural Gas Hubs Retreat - Natural Gas Intelligence",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeEZ4bzJjcFpCZUxfOUJhamg3cWRfNUFUTHc3WV9pYlBGNU9zbmFiQUZDVFBOX0xUTTU4cVVyc1ptbFhETkg5a2YtcXdwYTZOazkxWnlpOXpGalZkQlNiTzhVaFdnVlFqcnRQSjR6aF9IWU04WDBmX0tsamdtbEJXSWhHdkR4eEhRcl80Y1NVVTRyZw?oc=5",
         "source": "Natural Gas Intelligence",
         "published": "2026-08-21T21:11:59+00:00"
-      },
-      {
-        "title": "Solitude FID Sparks Jump in Long-Dated Waha Natural Gas Forward Curve - Natural Gas Intelligence",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQajAtNU94YkFSVGp0cmVRbWpzU2JPRmxDLTFPWFRGY0w4aWpTU2NLWmNJYzI0MDM0SEFrNkdfWGdUOHVfR1JoYU5WdlVkV3JHNHdfN0lrT3dfZ3FEWDAzSVlXNVBWc0tIUE15RFk0eTJfWTJ3R1RMYk55VmYzalNDcnVva3o5U2czUjU4N0tVRmw0MzBieGxWUG03N2dMRzM5QW4tSDFn?oc=5",
-        "source": "Natural Gas Intelligence",
-        "published": "2026-08-21T18:25:45+00:00"
       }
     ],
     "jkm": [
@@ -133,10 +133,10 @@
     ],
     "nbp": [
       {
-        "title": "Austrian CEGH VTP Natural Gas Daily Futures Price Chart — ICEENDEX:AVL19X2026 - TradingView",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrWW5zSVRuOVYxS0NkcWhjSzdoTUljNGJraWN6UGN0WHludHJJNkgya0QwQUVMOE5aakRITW5MZ3FHZDN5Mjk2eC16UmY3QWxQbDIxbVVOSzFHWHEtUDAtUGFHYUo0WEdDMkxLaUx5QWFVYTNWUFVmcE9nQQ?oc=5",
+        "title": "Austrian CEGH VTP Natural Gas Daily Futures Price Chart — ICEENDEX:AVL21X2026 - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hWHVfZzM0SjZFVXV0V21BYVpMeVRCVU16d1NIM0NTSElQUTloR2VWY3ZDU2tHOG1xb3RybEJ4c1JiSHdwX1BFQTZmT0N6YnoteWdadnJpLUpMM3VLQmdLeVN1MlJXYVA2dVFkWWVScEV3a3lJNTdNSUFvNA?oc=5",
         "source": "TradingView",
-        "published": "2026-08-19T15:22:40+00:00"
+        "published": "2026-08-21T14:06:33+00:00"
       },
       {
         "title": "Energy bills forecast to reach 3-year high: comment - Energy & Climate Intelligence Unit | ECIU",
@@ -145,8 +145,8 @@
         "published": "2026-08-19T11:02:38+00:00"
       },
       {
-        "title": "EEX NBP EGSI Natural Gas Day Futures (Aug 2026 D20) Trade Ideas — EEX:G920Q2026 - TradingView",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1RRnBaQTN1TndBUDl5RGQydWd0REhVRDZDTkMySzRvTFlVN3dNNTFSSEUya2l1dmFqbmllX2RVTm45c3d6NFJMQUZNTDY5Y0lQQzkwSDVRdzkxR2laMlZzWkFXcVVpZTZlOFJ0ZlZfTWhzVHdobVQtMWhn?oc=5",
+        "title": "EEX NBP EGSI Natural Gas Day Futures (Aug 2026 D24) Trade Ideas — EEX:G924Q2026 - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBjX1MxS2pQa3I3VzkyWEpkd0lid29rUF9JZjk4V3dhNUt6NFZwTl9mVmlxd0JnX3E3QkRBSXYzQl8wbWpKeGdITEZ1NnVRM0dmVlB1emM4LXVQQnV3OHEtWGN1UVptajM1M0U5ekZraE9mUnE4VnNwSXFn?oc=5",
         "source": "TradingView",
         "published": "2026-08-18T05:57:15+00:00"
       },
@@ -171,24 +171,24 @@
         "published": "2026-06-15T07:00:00+00:00"
       },
       {
-        "title": "Mont Belvieu Propane Price Soars over Conway - RBN Energy",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHJMME0zTUhQb19BbXlMdzVBVzB3c2lsLUZWc2I3aEZjLWVRUnNfOHF0UlZjckJEaU16akZwZG5DSzRUbmd3VVJGWHhSSjItQkFRQlEzVEE1aHZ5QTMwMVpyRDRILWo4ZFFOOGF4YzVzcHlTcHZTUG5KclRwR2JUOU8wNE5SS1lVb1ZPdkREMXZHX2NhWGU5bXln?oc=5",
-        "source": "RBN Energy",
-        "published": "2026-05-18T07:00:00+00:00"
-      },
-      {
         "title": "Propane prices remain stable, relatively cheap - LP Gas Magazine",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZndmYzFJUmtNcDFwU3hTNGlRdHVJZC0xV1NwTS12OU1PUjRhdnlIdjBvS1MtelFzTEdjb2tEcktJM180TDBtSnhlMlRna3Fnb2RQQzA3OEpLVzJiOWd5TUY3T002NTVZeTdTaks0aVZWTGtCMk1IUUhIWHV2LUFhUzZ3?oc=5",
         "source": "LP Gas Magazine",
         "published": "2026-05-11T07:00:00+00:00"
+      },
+      {
+        "title": "Antero Warns of Propane Shortages as Global Buyers Scramble to Buy NGLs Amid Iran War - Natural Gas Intelligence",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdTFmUHRYSmVOV3c3LXNpLW5IVHB5OUYxLWhTaEppMERIR2pDYnpNZGQwaE14QzQxeWkxaWFFSEpiZXRoZldoSkxhbjVlTGowQVd5czZKUkNUMXNJTjJyRU1JWEVyRW9QTm92dmlpWTN1QVF2dk5xa2V2UDAybVlmMnRCRlFHWWlWcl91UXZMczVDenBLTktRLTZSNlUyUjBONTc2QXJnazhsZFJQUEQ3OE1aNm9PelJTdGhV?oc=5",
+        "source": "Natural Gas Intelligence",
+        "published": "2026-05-05T07:00:00+00:00"
       }
     ],
     "ttf": [
       {
         "title": "European TTF Gas Surges to a Five-Month High as Storage Levels Fall 📈 - XTB.com",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPS1dVeTlUM1NFblBwRklPZ18tWm81NDVsZ0JxQXVha2FnRV9zM3otd1FtblFLa3FXejkxZHhpM0ZYdDA4WlVkeDZMMC1uRVV0OVhGRU1ZRGdoTmVlNHVyVmphTUhJT2k4S2RyMUotWm1HalB5Z1NET2RXUzB1SE1keWtDOGVPbnZmeHQtbDRUemMtbXhGV0hENldaSjFVNUZxVktGSC1ST3Jpd3NrV0JXRks5cG9GaGhUaHJ3QkdJUGpyOTA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYnI1VWRqOWpwV3Ffbk0wOUNuTFg2UVdveWFVWVdWY0JmVmpVWXFsUmVPVkViTFRYcEhlQm0ydGpIM0d5YUI2M050SFJSYUIxczk3MXA3MjVHRTBOeVRZMU9Hb3NWbnhKR3RjaVRXYVNWbFpGOG1CSlNnc2lmWk41Q2dOMFRJTzA0ajN0c0pEc1hlTmJhaFp5OTdFNE0xalhReFlQTEFLZkVuUQ?oc=5",
         "source": "XTB.com",
-        "published": "2026-08-20T17:35:37+00:00"
+        "published": "2026-08-20T18:12:53+00:00"
       },
       {
         "title": "Heat and river constraints are turning Europe’s summer power stack into a gas risk again - MarketScale",
@@ -197,9 +197,9 @@
         "published": "2026-08-20T11:44:57+00:00"
       },
       {
-        "title": "European gas prices hit highest point since March, worse may follow - Euronews.com",
+        "title": "European gas prices hit highest point since March, worse may follow - Euronews",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZzlSVHF0OFpsaF84bkxNanhJOEF1akdhcnNWY1VQMGhTaUFFeUFDVGtsX0E4VVdiS0w3ZmxpZTZXQnBlcEM3Q3U2TVA0RmJra1FSQXlEU2xUYlc3T3hjdXpNUmNTUmtnRWlsOE9GcDVrU1ZBeWMxMGdkblBOMjFoYXY0LVZCamE3dW0xMDgtc09feEtvVi1FcFN3QVBMZTZpa1FLckZB?oc=5",
-        "source": "Euronews.com",
+        "source": "Euronews",
         "published": "2026-08-20T05:47:46+00:00"
       },
       {
@@ -237,28 +237,28 @@
     ],
     "wti": [
       {
-        "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
-        "source": "LiteFinance",
-        "published": "2026-08-22T00:22:20+00:00"
-      },
-      {
-        "title": "WTI Price Forecast: Supply Tightness Could Push Crude Above $90 - Bitcoin World",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5kdWNKN1d5WGtYR3g2RGpvRzNwQUlqcHk0c01JLTZkY0FGV3laU3JubHdDS2R2aVZNRnRvQ1d5dllZaUNzQl92cl96NC1WY2czOHFYMVMxLUhZeUhmWUY4RDFTdHFGeWJEQUptWU94STl6OUt0YU1XS3B3cGc?oc=5",
-        "source": "Bitcoin World",
-        "published": "2026-08-21T22:05:11+00:00"
-      },
-      {
         "title": "Global crude oil prices surged | Akashvani News - News On AIR",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlcDBycXp3TzV0ZFJfaFNIV25SdkxwYnJRS0wwdVM4YlE0am92cnpHQXVUaG90MlA0SHN1RkxXMXk2bWFDWmFHX0FGYWVnZ1dOUVJNRDV0d2ZncnQ4T1NOR28teGgtZmc?oc=5",
         "source": "News On AIR",
-        "published": "2026-08-21T20:01:58+00:00"
+        "published": "2026-08-22T21:17:38+00:00"
       },
       {
-        "title": "Crude Oil Prices Decline Amidst Supply Risk Concern - MarketForces Africa",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORVZUOEEzRzNLOG1BbUxNalN4dnIyd3NHWHVjYkNnZ0RUSnJyZU5VTGpuZUFtVzJCQU14am9HSURtWm5tcEt6OVdYWXdTX203NDV4ZWQxUlJBOXlqdzdCRGdnamREZC04endhQlhNN05jQVR2bWZ6T055aW1fRWlKNjJSdnU?oc=5",
-        "source": "MarketForces Africa",
-        "published": "2026-08-21T19:44:04+00:00"
+        "title": "Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSWlSQ0JySWhtckl3S01IdjNPcndoTTVOUWVSRmRXLWw2b1U3R3hZeTdwcFM4S1pxNnRVa2dPMXV5Vk9SZWNXaEsyWVYtd2hTZkNBXy1SbjRiaFRFT2cxekVUbTZFXzY1LXJEMXA2WkNVdXhMVnBzbGdNSllPdjlmcS1DMzZTQmo1bDl3dGJIWFhDUzhtUDN1bEV3?oc=5",
+        "source": "EnergyNow",
+        "published": "2026-08-22T10:16:35+00:00"
+      },
+      {
+        "title": "Global oil prices rise: Brent crude surpasses $94 amid the Hormuz crisis - صوت الإمارات",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWkZVTU9OT2xRUktNNFZ3VGFXWW5BZ2NVbkFRWWQySTQxNm5MUFZlMW5PeE13T08tdE1qT290UUYtN1BNQW9GMWg3eXVOejNoMktLazBxM0tTMVRacWhtakRhYUc2OHZJQnRkWkdLQ2JuS3RaX2lib1M0T1FvNDNlZThtME1UUFJaNk85MWFER1MxOEhsSDBBUDlyZzZfZUw0b1hCdy01NnNMQ2oyT3RwZVBmYW9pbDBIbjJzUGl4ZTZzZjhs?oc=5",
+        "source": "صوت الإمارات",
+        "published": "2026-08-22T07:19:18+00:00"
+      },
+      {
+        "title": "Oil Prices Up - 21-08-26 - Armenpress",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qQXVfTTFmaDZOQ1J6VkZVajE2dW9GM1d6cnVEZFJmdjdBQXl6alJENU9CZFdaSlBmc0NzZmVHcUptRmhDZEhDQ2w3NnUtcWtHZ0HSAVdBVV95cUxQemtpa2YtcDQ0blRLbVU5ZDVobS1UY2N2YjRRZklxbXlncTROclMwcVN4c004WTZDU2xJRkU0N1VYaUtHalQ3V0JxOC11V0lQaWh6RHNCS0U?oc=5",
+        "source": "Armenpress",
+        "published": "2026-08-22T07:05:00+00:00"
       }
     ]
   }
